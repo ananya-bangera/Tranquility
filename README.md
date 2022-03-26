@@ -4,7 +4,7 @@
 <br>
 <table align="center">
   <tr>
-    <td><img src = "https://github.com/ananya-bangera/Music_Mania/blob/main/images/imgs.png"  height =190 width = 600></td>
+    <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/imgs.png"  height =190 width = 600></td>
   </tr>
  </table>
  <br>
@@ -25,8 +25,7 @@
 
 
 ## Links
-* GitHub Repo link: [Link to repository](https://github.com/your-repo-link)
-* Live Project Link(optional): [Website link here](www.google.com)
+* GitHub Repo link: [Link to repository](https://github.com/ananya-bangera/Tranquility)
 
 ## Technology stack
 
@@ -44,7 +43,16 @@ Refer to <a href="https://github.com/ananya-bangera/Music_Mania/blob/main/requir
 Steps to run your project once its setup. If you have an app or website, list how the user can go about using it.
 
 ## Applications
->How can your project do its part in solving a real-life problem? What are its possible applications? Describe here.
+<br>
+<table align="center">
+  <tr>
+    <ul>Delivering mental health interventions through apps has the potential to improve selfmanagement, cognition, skills-training, social support, and symptom tracking (National Institute of Mental Health 2019)</ul>
+    <ul>With mental health awareness growing by the day, it is not surprising that people seek out simpler and easier solutions to manage themselves better.</ul>
+    <ul>While therapy can seem to be a long and arduous process for many, a simple app that is non-intrusive, with step-by-step solutions, is something that may appeal to many people.</ul>
+    <ul>However, therapists generally believe that these apps cannot replace therapy. It can, however, be a healthy way to deal with immediate problems.</ul>
+  </tr>
+ </table>
+ <br>
 
 ## Future scope
 >A NEURAL NETWORK based system where it will handle all the operations usually  done by an experienced clinical physicatist/physcologist or therapist like diagnosistics and reccomending.
@@ -60,8 +68,8 @@ Steps to run your project once its setup. If you have an app or website, list ho
      <td><b> Mood Tracker </b></td>
   </tr>
   <tr>
-    <td><img src = "https://github.com/ananya-bangera/Music_Mania/blob/main/images/HomePage.png" width = 700></td>
-    <td><img src = "https://github.com/ananya-bangera/Music_Mania/blob/main/images/TopArtists.png" width = 700></td>
+    <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/HomePage.png" width = 700></td>
+    <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/MoodTracker.png" width = 700></td>
   </tr>
  </table>
  <br>
@@ -74,8 +82,8 @@ Steps to run your project once its setup. If you have an app or website, list ho
      <td><b> Exercise </b></td>
   </tr>
   <tr>
-    <td><img src = "https://github.com/ananya-bangera/Music_Mania/blob/main/images/AboutUs.png" width = 500></td>
-    <td><img src = "https://github.com/ananya-bangera/Music_Mania/blob/main/images/FeedBack.png" width = 500></td>
+    <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/Recommendation.png" width = 500></td>
+    <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/Exercise.png" width = 500></td>
   </tr>
  </table>
  <br>
@@ -88,8 +96,8 @@ Steps to run your project once its setup. If you have an app or website, list ho
      <td><b> Further Blog Options </b></td>
   </tr>
   <tr>
-    <td><img src = "https://github.com/ananya-bangera/Music_Mania/blob/main/images/AboutUs.png" width = 500></td>
-    <td><img src = "https://github.com/ananya-bangera/Music_Mania/blob/main/images/FeedBack.png" width = 500></td>
+    <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/Blogs.png" width = 500></td>
+    <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/BlogsOptions.png" width = 500></td>
   </tr>
  </table>
  <br><br>
@@ -101,8 +109,8 @@ Steps to run your project once its setup. If you have an app or website, list ho
      <td><b> To do List </b></td>
   </tr>
   <tr>
-    <td><img src = "https://github.com/ananya-bangera/Music_Mania/blob/main/images/AboutUs.png" width = 500></td>
-    <td><img src = "https://github.com/ananya-bangera/Music_Mania/blob/main/images/FeedBack.png" width = 500></td>
+    <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/Science.png" width = 500></td>
+    <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/ToDoList.png" width = 500></td>
   </tr>
  </table>
  <br>
@@ -114,8 +122,8 @@ Steps to run your project once its setup. If you have an app or website, list ho
      <td><b> List  of Theraphists  </b></td>
   </tr>
   <tr>
-    <td><img src = "https://github.com/ananya-bangera/Music_Mania/blob/main/images/AboutUs.png" width = 500></td>
-    <td><img src = "https://github.com/ananya-bangera/Music_Mania/blob/main/images/FeedBack.png" width = 500></td>
+    <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/ListOfPatients.png" width = 500></td>
+    <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/ListOfTheraphists.png" width = 500></td>
   </tr>
  </table>
  <br>
