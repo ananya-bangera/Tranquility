@@ -55,8 +55,9 @@ Clone the repository, extract the zip file. Open 'homepage.html' on a live serve
  <br>
 
 ## Future scope
->A Neural Network based system where it will handle all the operations usually  done by an experienced clinical physicatist/physcologist or therapist like diagnosistics and reccomending.
->The problem with not being implementable is the varied dataset based on location and other factors,patient-therapist bonding,security and privacy purposes and making the entire experince more memorable for the user like implementing this in a metaverese. Add an interactive chatbot for the user, the chatbot improves its performance as it gets more data.
+>A Neural Network based system where it will handle all the operations usually  done by an experienced clinical physicatist/physcologist or therapist like diagnosistics and recommending.
+>The problem with not being implementable is the varied dataset based on location and other factors,patient-therapist bonding,security and privacy purposes and making the entire experince more memorable for the user like implementing this in a metaverese. 
+>Add an interactive chatbot for the user, the chatbot improves its performance as it gets more data.
 
 ## Screenshots
 <br>
