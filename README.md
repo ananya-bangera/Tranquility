@@ -126,6 +126,6 @@ Steps to run your project once its setup. If you have an app or website, list ho
     <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/ListOfTheraphists.png" width = 500></td>
   </tr>
  </table>
- <br> 
+ <br>  
 
 
