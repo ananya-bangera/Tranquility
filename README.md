@@ -4,7 +4,7 @@
 <br>
 <table align="center">
   <tr>
-    <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/imgs.png"  height =190 width = 600></td>
+    <td><img src = "https://github.com/ananya-bangera/Tranquility/blob/main/images/imgs.jpg"  height =190 width = 600></td>
   </tr>
  </table>
  <br>
