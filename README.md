@@ -10,7 +10,7 @@
  <br>
 
 ## Team members
-* Priya Mali - Email
+* Priya Mali - ppmali_b20@ce.vjti.ac.in
 * Ananya Bangera - agbangera_b20@ce.vjti.ac.in
 * Siddhant Sontakke - shsontakke_b20@ce.vjti.ac.in
 * Labib Asari - laasari_b21@ce.vjti.ac.in
