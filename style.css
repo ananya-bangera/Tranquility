@@ -1,0 +1,107 @@
+* {
+  font-size:large;
+  margin : 0;
+  padding: 0;
+  color:#000;
+}
+.container{
+  background:white;
+  /* width:95%; */
+  /* padding:0px; */
+}
+body {
+  background : yellow;
+  font-family: sans-serif;
+}
+/* .containingClass{
+  width:
+} */
+@media (max-width: 768px) {
+  .navbar .navbar-nav {
+    display       : inline-block;
+    float         : none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+}
+
+.main {
+  width   : 60%;
+  margin  : 24% auto;
+  position: relative;
+  
+
+}
+
+.slider {
+  background        : linear-gradient(to right, #ffd200 0%, #ffd200 50%, #fff 50%, #fff 100%);
+  border            : solid 1px #ffd200;
+  transition        : background 450ms ease-in;
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  width             : 100%;
+  height            : 7px;
+  outline           : none;
+  border-radius     : 3px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width             : 48px;
+  height            : 48px;
+  cursor            : pointer;
+  z-index           : -1;
+  position          : relative;
+}
+
+.selector {
+  height   : 52px;
+  width    : 48px;
+  position : absolute;
+  bottom   : -20px;
+  left     : 50%;
+  transform: translate(-50%);
+  z-index  : 2;
+  
+
+}
+
+.SelectBtn {
+  height             : 48px;
+  width              : 48px;
+  background-image   : url(red.jpg);
+  background-size    : cover;
+  background-position: center;
+  border-radius      : 50%;
+  position           : absolute;
+  bottom             : 0;
+
+}
+
+.SelectValue {
+  width        : 48px;
+  height       : 40px;
+  position     : absolute;
+  top          : 0;
+  background   : #ffd200;
+  border-radius: 50%;
+  text-align   : center;
+  line-height  : 45px;
+  font-size    : 20px;
+  font-weight  : bold;
+}
+
+#SelectValue::after {
+  content     : '';
+  border-top  : 17px solid #ffd200;
+  border-left : 24px solid rgb(255, 151, 151);
+  border-right: 24px solid rgb(241, 137, 137);
+  position    : absolute;
+  bottom      : -14px;
+  left        : 0;
+
+}

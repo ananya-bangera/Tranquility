@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root{
+    --blue : #9900ff;
+    --white : #fff;
+    --grey : #f5f5f5;
+    --black1 : #222;
+    --black2 : #999;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+ion-icon {
+    color: black;
+  }
+
+.container
+{
+    position: relative;
+    width: 100%;
+}
+
+.navigation
+{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: var(--blue);
+    border-left: 10px solid var(--blue);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navigation ul
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+
+}
+
+.navigation ul li
+{
+    position: relative;
+    width:100%;
+    list-style: none;
+}
+
+.navigation ul li:hover
+{
+    background: var(--white);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+
+.navigation ul li:nth-child(1)
+{
+    margin-bottom: 40px;
+    pointer-events: none;
+    font-size: 30px;
+}
+
+.navigation ul li a
+{
+    position: relative;
+    display: block;
+    width:  100%;
+    display:  flex;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navigation ul li:hover a
+{
+    color: var(--blue);
+
+}
+
+.navigation ul li a .icon
+{
+    position: relative;
+    display: block;
+    min-width: 30px;
+    height: 30px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.navigation ul li a .icon ion-icon
+{
+    font-size: 1.75em;
+}
+
+.navigation ul li a .title
+{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+
+}
+
+.userP
+{
+    padding: 10px;
+    margin-right: -10px;
+    height: 30px;
+    
+}
+
+
+.navigation ul li:hover a::before
+
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--white);
+    pointer-events: none;
+}
+
+.navigation ul li:hover a::after
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--white);
+    pointer-events: none;
+}
+
+
+
+.body
+{
+    left: 2000px;
+}
+
+#piechart
+{
+    position:relative;
+    top: 0px; 
+    left:350px;
+
+}
+
+
+#top_x_div
+{
+    position: absolute;
+    top: 450px;
+    left: 450px;
+}
+
+#line_top_x
+{
+    position: absolute;
+    top:50px;
+    left:900px;
+}

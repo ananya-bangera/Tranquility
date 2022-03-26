@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+    <!-- Bootstrap CSS -->
+    <!-- {% if title %}
+        <title>Music Mania - {{ title }}</title>
+    {% else %}
+        <title>Music Mania</title>
+    {% endif %} -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link rel="icon" type="image/icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/tracker.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/button.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/overlay.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/typewrite.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/scrollbar.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/preloader.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/feedback.css') }}" />
+</head> -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['School & Studies', 11],
+                ['Eat', 2],
+                ['Commute', 2],
+                ['Watch TV', 2],
+                ['Sleep', 7]
+            ]);
+
+            var options = {
+                title: 'My Daily Activities'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+
+        $(window).resize(function () {
+            drawChart();
+            drawStuff()
+            drawChart2();
+        });
+    </script>
+
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawStuff);
+
+        function drawStuff() {
+            var data = new google.visualization.arrayToDataTable([
+                ['Topic', 'Score'],
+                ["Academics", 44],
+                ["Mindfulness", 31],
+                ["Gratitude", 12],
+                ["Happiness", 10],
+                ['Other', 39]
+            ]);
+
+            var options = {
+                title: 'My Overall Score',
+                width: 900,
+                legend: { position: 'none' },
+                chart: {
+                    title: 'My Overall Score',
+                    subtitle: 'based on last 30 days'
+                },
+                bars: 'horizontal', // Required for Material Bar Charts.
+                axes: {
+                    x: {
+                        0: { side: 'top', label: 'Score' } // Top x-axis.
+                    }
+                },
+                bar: { groupWidth: "90%" }
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+            chart.draw(data, options);
+        };
+
+        $(window).resize(function () {
+            drawChart();
+            drawStuff()
+            drawChart2();
+        });
+    </script>
+
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['line'] });
+        google.charts.setOnLoadCallback(drawChart2);
+
+        function drawChart2() {
+
+            var data = new google.visualization.DataTable();
+            data.addColumn('number', 'Week');
+            data.addColumn('number', 'Feeling low');
+            data.addColumn('number', 'Anxiety level');
+            data.addColumn('number', 'Comparision with others');
+
+            data.addRows([
+                [1, 37.8, 80.8, 41.8],
+                [2, 30.9, 69.5, 32.4],
+                [3, 25.4, 57, 25.7],
+                [4, 11.7, 18.8, 10.5],
+                [5, 11.9, 17.6, 10.4],
+                [6, 8.8, 13.6, 7.7],
+                [7, 7.6, 12.3, 9.6],
+                [8, 12.3, 29.2, 10.6],
+                [9, 16.9, 42.9, 14.8],
+                [10, 12.8, 30.9, 11.6],
+                [11, 5.3, 7.9, 4.7],
+                [12, 6.6, 8.4, 5.2],
+                [13, 4.8, 6.3, 3.6],
+                [14, 4.2, 6.2, 3.4]
+            ]);
+
+            var options = {
+                chart: {
+                    title: 'My Overall Progress',
+                    subtitle: ''
+                },
+                width: 600,
+                height: 400,
+                axes: {
+                    x: {
+                        0: { side: 'top' }
+                    }
+                }
+            };
+
+            var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+            chart.draw(data, google.charts.Line.convertOptions(options));
+        }
+
+        $(window).resize(function () {
+            drawChart();
+            drawStuff()
+            drawChart2();
+        });
+    </script>
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">Hey < <name>> !</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('users.register') }}">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <ion-icon name="home"></ion-icon> Dashboard
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <ion-icon name="pencil"></ion-icon> Daily form thing
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="moodTracker.html">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <ion-icon name="person"></ion-icon> Self Monitoring
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <ion-icon name="book"></ion-icon> Journal
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <ion-icon name="book"></ion-icon> To do List
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="listOfPatients.html">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <ion-icon name="book"></ion-icon> Connect with patients
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <ion-icon name="bed"></ion-icon> Sleep Tracker
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <ion-icon name="notifications"></ion-icon> Reminders
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <ion-icon name="happy"></ion-icon> Recommended for you
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <ion-icon name="person-add"></ion-icon> Connect with Experts
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <ion-icon name="bicycle"></ion-icon> Exercise&Physical health
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">
+                            <ion-icon name="flash-outline"></ion-icon> Science
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title userP"></span>
+                        <ion-icon name="person-circle"></ion-icon> User Profile</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        {% block content %}{% endblock %}
+
+
+    </div>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let list = document.querySelectorAll('.navigation li')
+        function activeLink() {
+            list.forEach((item) =>
+                item.classlist.remove('hovered'));
+            this.classlist.add('hovered');
+        }
+        list.forEach((item) =>
+            item.addEventListener('mouseover', activeLink));
+    </script>
+</body>
+
+</html>
+
+
+  <!-- Footer-End -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tracker.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/overlay.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/distance.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/typewrite.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/music-list.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/emoji.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+<script>
+    AOS.init();
+
+
+</script>
+</body>
+</html> -->
