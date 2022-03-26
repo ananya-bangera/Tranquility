@@ -55,7 +55,7 @@ Steps to run your project once its setup. If you have an app or website, list ho
  <br>
 
 ## Future scope
->A NEURAL NETWORK based system where it will handle all the operations usually  done by an experienced clinical physicatist/physcologist or therapist like diagnosistics and reccomending.
+>A Neural Network based system where it will handle all the operations usually  done by an experienced clinical physicatist/physcologist or therapist like diagnosistics and reccomending.
 >The problem with not being implementable is the varied dataset based on location and other factors,patient-therapist bonding,security and privacy purposes and making the entire experince more memorable for the user like implementing this in a metaverese.
 
 ## Screenshots
