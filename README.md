@@ -58,6 +58,7 @@ Clone the repository, extract the zip file. Open 'homePage.html' on a live serve
 >A Neural Network based system where it will handle all the operations usually  done by an experienced clinical physicatist/physcologist or therapist like diagnosistics and recommending.
 >The problem with not being implementable is the varied dataset based on location and other factors,patient-therapist bonding,security and privacy purposes and making the entire experince more memorable for the user like implementing this in a metaverese. 
 >Add an interactive chatbot for the user, the chatbot improves its performance as it gets more data.
+>Integrate the Physical Health and Sleep tracker (already implemented).
 
 ## Screenshots
 <br>
