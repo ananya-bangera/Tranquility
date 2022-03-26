@@ -40,7 +40,7 @@
 Refer to <a href="https://github.com/ananya-bangera/Music_Mania/blob/main/requirements.txt">requirements.txt</a> for all the python module need to execute the website.
 
 ## Usage
-Steps to run your project once its setup. If you have an app or website, list how the user can go about using it.
+Clone the repository, extract the zip file. Open 'homepage.html' on a live server and the website will be hosted on your device. You can use any browser to view the complete website after it. 
 
 ## Applications
 <br>
@@ -56,7 +56,7 @@ Steps to run your project once its setup. If you have an app or website, list ho
 
 ## Future scope
 >A Neural Network based system where it will handle all the operations usually  done by an experienced clinical physicatist/physcologist or therapist like diagnosistics and reccomending.
->The problem with not being implementable is the varied dataset based on location and other factors,patient-therapist bonding,security and privacy purposes and making the entire experince more memorable for the user like implementing this in a metaverese.
+>The problem with not being implementable is the varied dataset based on location and other factors,patient-therapist bonding,security and privacy purposes and making the entire experince more memorable for the user like implementing this in a metaverese. Add an interactive chatbot for the user, the chatbot improves its performance as it gets more data.
 
 ## Screenshots
 <br>
