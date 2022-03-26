@@ -128,4 +128,4 @@ Steps to run your project once its setup. If you have an app or website, list ho
  </table>
  <br>
 
-![Screenshot alt text](https://img.freepik.com/free-photo/blue-purple-technology-circuit_73426-205.jpg "Here is a screenshot")
+
