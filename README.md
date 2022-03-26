@@ -40,7 +40,7 @@
 Refer to <a href="https://github.com/ananya-bangera/Music_Mania/blob/main/requirements.txt">requirements.txt</a> for all the python module need to execute the website.
 
 ## Usage
-Clone the repository, extract the zip file. Open 'homepage.html' on a live server and the website will be hosted on your device. You can use any browser to view the complete website after it. 
+Clone the repository, extract the zip file. Open 'homePage.html' on a live server and the website will be hosted on your device. You can use any browser to view the complete website after it. 
 
 ## Applications
 <br>
